@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara's Login-Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="login-Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-md-6 box1">
+                    <div class="inline-text">
+                        <h1>Login</h1>
+                        <p>Get access to your orders, wishlist, and recommendations</p>
+                    </div>
+                </div>
+                <div class="col-md-6 box2">
+                    <form action="login.php" method="POST">
+                        <div class="user-data">
+                            <input type="email" id="username" name="email" required>
+                            <label for="username">Email</label>
+                        </div>
+                        <div class="user-data">
+                            <input type="password" id="password" name="password" pattern=".{6}"
+                                title="Password must be six characters" required>
+
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="user-id">
+                            <p>By continuing, you agree to Cara's terms of use and privacy policy</p>
+                        </div>
+                        <span><a href="#">Forgot?</a></span>
+                        <div class="user-id button">
+                            <input type="submit" value="Login">
+                        </div>
+                       
+                        <div class="user-id">
+                            <p class="footer"><a href="signup.html">New to Cara? Create an account</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
